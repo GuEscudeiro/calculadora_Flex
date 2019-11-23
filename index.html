@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Js - Aula5: Calculadora Flex</h1>
-    <img src="neutro.png" alt="Calculadora Flex">
-    <form>
-        <input type="text" placeholder="Etanol" size="8">
-        <input type="text" placeholder="Gasolina" size="8">
-        <input type="button" value="Vantagem">
-        <input type="reset" value="Limpar">
+    <section id="principal">
+    <h1>Calculadora Flex</h1>
+    <img  id="status" src="neutro.png" alt="Calculadora Flex">
+    <form name="frmflex">
+        <input type="text" placeholder="Etanol" size="8" name="txtetanol">
+        <input type="text" placeholder="Gasolina" size="8" name="txtgasolina">
+        <input type="button" value="Vantagem" onclick="calcular()">
+        <input type="reset" value="Limpar" onclick="resetar()">
+    </section>
     </form>
     <script src="script.js"></script>
 </body>
